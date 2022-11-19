@@ -21,6 +21,12 @@ Makes your lives = 2^20 (1048576)
 ### open
 Shows the original photo of the flag - say no to pixelation
 
+Benefit example
+
+![test](https://user-images.githubusercontent.com/99354516/202871534-370ce3a5-14b1-4d53-a243-39a530c98e3a.png)
+--->
+![test](https://user-images.githubusercontent.com/99354516/202871607-2141a350-ef1e-42c3-a0b1-050a8a7d77dd.png)
+
 ## Typical Flags
 ![preview](https://user-images.githubusercontent.com/99354516/202870014-fea9ea47-9b65-478e-a4c0-5ef484f459fd.png)
 ![preview](https://user-images.githubusercontent.com/99354516/202870039-f7912cf5-efec-4d5c-ac1d-cb65e6e185cc.png)
