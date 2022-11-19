@@ -127,10 +127,14 @@ def main():
     if ans == 'help':
         help_()
 
-    while lives != 0 and scores != 250:
+    while lives != 0 and scores != 250 and len(flags) != 0:
         round_()
 
     if scores == 250:
+        win = fg.Figlet(font='slant', width=500).renderText('You MEGA Win!')
+        print(win)
+
+    if len(flags) == 0:
         win = fg.Figlet(font='slant', width=500).renderText('You Win!')
         print(win)
 
