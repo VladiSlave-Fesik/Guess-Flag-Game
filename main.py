@@ -1,11 +1,21 @@
-from iso3166 import countries
+from iso3166 import countries as cnt
 import os
+from PIL import Image
+from colorit import background, init_colorit
 
-flags = os.listdir('iso3166_resized')
+init_colorit()
 
-print(flags)
+flags_folder = 'iso3166_resized\\'
+flags = os.listdir(flags_folder)
 
 
-for flag in flags:
-    flag = flag.replace('.png','')
-    print(countries.get(flag))
+def print_flag(img: str, folder: str = flags_folder, depth: int = 20):
+
+    img = Image.open(folder + img)
+    img = img.resize((depth, depth))
+
+    for y in range(img.size[1]):
+        for x in range(img.size[0]):
+            print(background('   ', img.getpixel((x, y))), end='')
+        print()
+
