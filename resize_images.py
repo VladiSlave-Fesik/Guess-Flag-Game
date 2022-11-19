@@ -1,6 +1,8 @@
 import os
 from PIL import Image
 
+'''That code resized all images from iso3166 and save resized image to iso3166_resized'''
+
 files = os.listdir('iso3166')
 print(files)
 

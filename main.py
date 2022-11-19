@@ -31,7 +31,7 @@ def print_flag(img: str, folder: str = flags_folder, depth: int = 20):
         print()
 
 
-def open_flag(img_name: str, folder='iso3166\\'):
+def open_flag(img_name: str, folder:str='iso3166\\'):
     img = Image.open(folder + img_name)
 
     img.save('a.png')
