@@ -1,10 +1,16 @@
-from iso3166 import countries as cnt
-from random import choice,shuffle
-import pyfiglet as fg
-import os
-from PIL import Image
-from colorit import background, init_colorit
-from time import sleep
+try:
+    from iso3166 import countries as cnt
+    from random import choice,shuffle
+    import pyfiglet as fg
+    import os
+    from PIL import Image
+    from colorit import background, init_colorit
+    from time import sleep, time
+
+except ImportError as error:
+    print(error)
+    input('Press Enter to close game\n')
+
 
 init_colorit()
 
@@ -30,7 +36,7 @@ def print_flag(img: str, folder: str = flags_folder, depth: int = 20):
 def round():
     global lives,scores,num_rounds
 
-    print(f'Round number {num_rounds}\nLives {lives}\nScores {scores}')
+    print(f'Round number {num_rounds}\nLives {lives}\nScores {scores}\n')
 
     print_flag(right_flag:= choice(flags))
 
@@ -52,12 +58,14 @@ def round():
 
     if answer != right_flag.replace('.png', ''):
         lives -= 1
-        print(f'Wrong! Right answer - {cnt.get(right_flag.replace(".png","") ).name}|{right_flag.replace}\n')
+        print(f'Wrong! Right answer - {cnt.get(right_flag.replace(".png","") ).name}|{right_flag.replace(".png","")}\n')
+
 
     else:
         scores += 1
         print('Correct!\n')
 
+    sleep(1.25)
     num_rounds += 1
 
 
@@ -74,3 +82,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+input('Press Enter to close game\n')
