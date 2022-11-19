@@ -110,6 +110,9 @@ def round_():
         scores += 1
         print('Correct!\n')
 
+
+    flags.remove(right_flag)
+
     sleep(1.25)
     num_rounds += 1
 
