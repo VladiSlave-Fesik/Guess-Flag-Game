@@ -26,7 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.convert">
+  <component name="RunManager" selected="Python.main">
     <configuration name="convert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Flags_Game" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,8 +92,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.resize_images" />
         <item itemvalue="Python.convert" />
+        <item itemvalue="Python.resize_images" />
       </list>
     </recent_temporary>
   </component>
