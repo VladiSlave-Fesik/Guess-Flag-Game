@@ -1,8 +1,11 @@
 from iso3166 import countries
 import os
 
-print(files:=os.listdir('iso3166_resized'))
+flags = os.listdir('iso3166_resized')
 
-for file in files:
-    file = file.replace('.png','')
-    print(countries.get(file))
+print(flags)
+
+
+for flag in flags:
+    flag = flag.replace('.png','')
+    print(countries.get(flag))
