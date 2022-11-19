@@ -134,7 +134,7 @@ def main():
         win = fg.Figlet(font='slant', width=500).renderText('You MEGA Win!')
         print(win)
 
-    if len(flags) == 0:
+    elif len(flags) == 0:
         win = fg.Figlet(font='slant', width=500).renderText('You Win!')
         print(win)
 
